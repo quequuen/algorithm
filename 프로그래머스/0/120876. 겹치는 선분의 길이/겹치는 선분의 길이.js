@@ -7,7 +7,7 @@ function solution(lines) {
             object[i]=(object[i]+1||0);
         }
     }
-    console.log(object);
+    
     for(let key in object){
         if(object[key]>0){
             count++;
