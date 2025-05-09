@@ -5,7 +5,7 @@ function solution(before, after) {
     let apple_cnt = 0;
     
     for(alpha of before){
-        before_cnt[alpha] = (before_cnt[alpha]===undefined)?1:before_cnt[alpha]+1;
+       before_cnt[alpha] = (before_cnt[alpha]||0)+1;
     }
     for(alpha of after){
         apple_cnt = [...after].join("").split(alpha).length-1;
